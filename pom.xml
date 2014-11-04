@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!-- $Id: pom.xml 10200 2014-09-25 10:21:35Z WAGNERDA $ -->
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>name.wagners</groupId>
@@ -14,7 +13,7 @@
         <maven>${maven.version}</maven>
     </prerequisites>
 
-    <name>VERBUND Maven Parent</name>
+    <name>wagners.name Maven Parent</name>
     <description>wagners.name Maven Parent</description>
     <url>http://www.wagners.name/projects/maven-parent</url>
 
@@ -55,15 +54,15 @@
     </issueManagement>
 
     <scm>
-        <connection>scm:svn:http://svn/svn/VMSDI/maven-parent/trunk</connection>
-        <url>https://svn.wagners.name/svn/VMSDI/maven-parent/trunk</url>
-        <developerConnection>scm:svn:http://svn.wagners.name/svn/maven-parent/trunk</developerConnection>
+        <connection>scm:git:ssh://git@stash.wagners.name:7999/mp/maven-parent.git</connection>
+        <url>https://stash.wagners.name/projects/MP/repos/maven-parent/</url>
+        <developerConnection>scm:git:ssh://git@stash.wagners.name:7999/mp/maven-parent.git</developerConnection>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <maven.version>3.0</maven.version>
         <junit.version>4.11</junit.version>
         <org.projectlombok.version>1.14.8</org.projectlombok.version>
@@ -98,7 +97,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.2</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -109,7 +108,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+                <version>2.10.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -122,7 +121,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.3</version>
+                <version>2.4</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -135,7 +134,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.8</version>
+                <version>2.9</version>
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
@@ -192,7 +191,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>2.5</version>
                     <configuration>
                         <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
                     </configuration>
@@ -200,7 +199,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.3</version>
+                    <version>3.4</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -344,7 +343,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.32</version>
+                <version>5.1.33</version>
             </dependency>
             <dependency>
                 <groupId>org.mariadb.jdbc</groupId>
@@ -354,7 +353,7 @@
             <dependency>
                 <groupId>net.sourceforge.csvjdbc</groupId>
                 <artifactId>csvjdbc</artifactId>
-                <version>1.0.21-kwaxi-3</version>
+                <version>1.0.21.2</version>
             </dependency>
 
             <!-- Utility -->
@@ -442,12 +441,12 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>javancss-maven-plugin</artifactId>
-                <version>2.0</version>
+                <version>2.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-changes-plugin</artifactId>
-                <version>2.10</version>
+                <version>2.11</version>
                 <reportSets>
                     <reportSet>
                         <reports>
@@ -459,7 +458,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.12.1</version>
+                <version>2.13</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
