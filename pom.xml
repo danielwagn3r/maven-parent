@@ -5,6 +5,7 @@
 
   <groupId>name.wagners</groupId>
   <artifactId>maven-parent</artifactId>
+  <version>8</version>
   <packaging>pom</packaging>
 
   <!-- Maven versions plugin reports an error if this is omitted -->
@@ -527,5 +528,4 @@
     </plugins>
   </reporting>
 
-  <version>7</version>
 </project>
