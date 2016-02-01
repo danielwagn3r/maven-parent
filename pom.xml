@@ -5,7 +5,7 @@
 
   <groupId>name.wagners</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>9</version>
+  <version>10</version>
   <packaging>pom</packaging>
 
   <!-- Maven versions plugin reports an error if this is omitted -->
@@ -69,9 +69,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:git:ssh://git@stash.wagners.name:7999/mp/maven-parent.git</connection>
-    <url>https://stash.wagners.name/projects/MP/repos/maven-parent/</url>
-    <developerConnection>scm:git:ssh://git@stash.wagners.name:7999/mp/maven-parent.git</developerConnection>
+    <connection>scm:git:ssh://git@bitbucket.wagners.name:7999/mp/maven-parent.git</connection>
+    <url>https://bitbucket.wagners.name/projects/MP/repos/maven-parent/</url>
+    <developerConnection>scm:git:ssh://git@bitbucket.wagners.name:7999/mp/maven-parent.git</developerConnection>
   </scm>
 
   <properties>
@@ -401,12 +401,12 @@
       <dependency>
         <groupId>net.sf.jopt-simple</groupId>
         <artifactId>jopt-simple</artifactId>
-        <version>4.10</version>
+        <version>4.9</version>
       </dependency>
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.9.5.1</version>
+        <version>0.9.5.2</version>
       </dependency>
 
       <!-- Lombok -->
