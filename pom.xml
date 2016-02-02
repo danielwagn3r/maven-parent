@@ -5,7 +5,7 @@
 
   <groupId>name.wagners</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>10</version>
+  <version>11</version>
   <packaging>pom</packaging>
 
   <!-- Maven versions plugin reports an error if this is omitted -->
@@ -348,7 +348,17 @@
       <dependency>
         <groupId>com.microsoft.sqlserver.jdbc</groupId>
         <artifactId>sqljdbc4</artifactId>
-        <version>4.0.2206.100</version>
+        <version>4.2.6420.100</version>
+      </dependency>
+      <dependency>
+        <groupId>com.microsoft.sqlserver.jdbc</groupId>
+        <artifactId>sqljdbc41</artifactId>
+        <version>4.2.6420.100</version>
+      </dependency>
+      <dependency>
+        <groupId>com.microsoft.sqlserver.jdbc</groupId>
+        <artifactId>sqljdbc42</artifactId>
+        <version>4.2.6420.100</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.jtds</groupId>
@@ -369,7 +379,7 @@
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.36</version>
+        <version>5.1.38</version>
       </dependency>
       <dependency>
         <groupId>org.mariadb.jdbc</groupId>
@@ -401,7 +411,7 @@
       <dependency>
         <groupId>net.sf.jopt-simple</groupId>
         <artifactId>jopt-simple</artifactId>
-        <version>4.9</version>
+        <version>5.0-beta-1</version>
       </dependency>
       <dependency>
         <groupId>com.mchange</groupId>
