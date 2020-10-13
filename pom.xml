@@ -79,7 +79,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
     <maven.version>3.0</maven.version>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <org.projectlombok.version>1.16.6</org.projectlombok.version>
     <org.slf4j.version>1.7.14</org.slf4j.version>
   </properties>
